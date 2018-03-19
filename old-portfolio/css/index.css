@@ -1,0 +1,19 @@
+/*Anirudh Kumar Subramanyam
+CSE 154 AI
+This file is the css file for the home page of the portfolio in addition to the main css file. */
+
+#about_me p {
+  margin-left: 100px;
+  margin-right: 100px;
+  
+}
+
+.image {
+  display: flex;
+  margin: 30px auto 30px auto;
+  box-shadow: 1px 1px 1px gray;
+  height: 300px;
+}
+
+
+

@@ -1,0 +1,41 @@
+/*Anirudh Kumar Subramanyam
+CSE 154 AI
+This css file for the projects page of the portfolio in addition to the main css file. */
+
+.project_desc h4 {
+  background-color: black;
+  border: 1px solid black;
+  color: white;
+}
+
+
+.project {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+#eatout_image {
+  width: 500px;
+  height: 300px;
+}
+
+#fresca_image {
+  width: 300px;
+  height: 300px;
+}
+
+.image_link {
+  transition: .5s ease;
+}
+
+.image_link:hover {
+  filter: blur(5px);
+}
+
+
+#eatout:hover .project_desc, #fresca:hover .project_desc {
+  border: 1px solid black;
+}
+

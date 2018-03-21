@@ -22,8 +22,13 @@ html {
     }    
 }
 
-.small {
-    height: 300px;
-    width: 500px;
+
+.row {
+    min-width: 100vh;
 }
 
+#project {
+    padding: 50px;
+    height: 100vh;
+    width: 100%;
+}

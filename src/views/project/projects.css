@@ -1,5 +1,15 @@
 .temp {
+    padding: 50px;
     width: 100vh;
     height: 100vh;
     text-align: center;    
+}
+
+.icon {
+    color: #6d9eeb; 
+    font-size: 22pt;
+}
+
+.icon:hover {    
+    color: rgb(0, 98, 255);       
 }

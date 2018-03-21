@@ -3,11 +3,12 @@ import ReactDOM from 'react-dom';
 import {Tab, Tabs,Button, SideNav, SideNavItem, Navbar, NavItem, Row, CardPanel, Col, Card, CardTitle, Icon} from 'react-materialize';
 import $ from "jquery";
 import './index.css';
-import MyNavBar from "./components/navbar"
-import Project from "./views/project/projects"
-import Experience from "./views/experience/experience"
+import MyNavBar from "./components/navbar";
+import Project from "./views/project/projects";
+import Experience from "./views/experience/experience";
+import About from "./views/about/about";
 
-class About extends React.Component {
+class Portfolio extends React.Component {
     constructor(props) {
         super(props);
         this.state = {    
@@ -15,7 +16,7 @@ class About extends React.Component {
       }
     }
       componentDidMount() {
-        setTimeout(() => this.setState({ loading: false }), 6000); // simulates an async action, and hides the spinner                
+        setTimeout(() => this.setState({ loading: false }), 1200); // simulates an async action, and hides the spinner                        
       }
       
       render() {
@@ -25,21 +26,35 @@ class About extends React.Component {
           return null; 
         }
         
-    return (             
+    return (                    
         <div>                   
-            <MyNavBar/>
-            <a href = "#P">
-            <Project/>
-            </a>
-            <a href = "#E">
-            <Experience ref = "Experience"/>
-            </a>
+            <MyNavBar/>  
+            <About/>  
+            <div id = "project">
+                <Row className = "projects-row"> 
+                <Project 
+                        projectName = "Indiceision"
+                        projectImage = "./img/InDiceision.svg"
+                        projectDesc = "Android application"
+                        projectLink = "https://github.com/heyjasonxu/Indiceision"
+                    />         
+                                          
+                    <Project 
+                        projectName = "Eatout"
+                        projectImage = "./img/eatout.png"
+                        projectDesc = "R application"
+                        projectLink = "https://ask710.shinyapps.io/eatout/"
+                    />
+
+                </Row>
+                    
+            </div>
+            <Experience/>
         </div>
     );
   }  
 }
-
-  ReactDOM.render(<About />, document.querySelector('#root'));
+  ReactDOM.render(<Portfolio />, document.querySelector('#root'));
 
           {/* <Card className='small'
         header={<CardTitle image={require('./eatout.png')}>Card Title</CardTitle>}

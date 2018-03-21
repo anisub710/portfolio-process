@@ -1,4 +1,29 @@
+html {
+    background-color: whitesmoke;
+}
+.loader:empty {
+    content:url("./img/highlighted.svg");
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: calc(50% - 4em);
+    left: calc(50% - 4em);
+    animation: loading 1.2s infinite ease;
+    animation-direction: alternate;
+}
+
+@keyframes loading {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {        
+        transform: scale(2);
+    }    
+}
+
 .small {
     height: 300px;
     width: 500px;
 }
+

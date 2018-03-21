@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {Parallax, Row,Col,Card, CardTitle} from 'react-materialize';
+import {Row,Col,Card, CardTitle} from 'react-materialize';
 import $ from "jquery";
 import '../../index.css';
 import './projects.css';
@@ -10,7 +10,7 @@ import './projects.css';
 
 export default class Project extends React.Component  {
 
-    render() {
+    render() {        
         var FaGithub = require('react-icons/lib/fa/github');
         const {
             projectName,
@@ -30,6 +30,7 @@ export default class Project extends React.Component  {
     }
 
 }
+
 
             {/* <div className = "temp" id = "project">            
                 <p> temporary text </p>

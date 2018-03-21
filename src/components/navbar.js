@@ -12,7 +12,9 @@ export default class MyNavBar extends React.Component  {
     //     console.log("This is the test Node" + this.refs);
     //     window.scrollTo(0, tesNode.offsetTop);
     // }
-    render() {
+    
+
+    render() {        
     return (                
         <Navbar fixed = "true" className = "my-nav" brand= {<img className = "menu"/>} right>
         <NavItem className = "my-tab" href = "#Project" onClick = {() => {timer("project")}}>Projects</NavItem>

@@ -16,7 +16,7 @@ class Portfolio extends React.Component {
       }
     }
       componentDidMount() {
-        setTimeout(() => this.setState({ loading: false }), 1200); // simulates an async action, and hides the spinner                        
+        setTimeout(() => this.setState({ loading: false }), 2400); // simulates an async action, and hides the spinner                        
       }
       
       render() {
@@ -27,19 +27,23 @@ class Portfolio extends React.Component {
         }
         
     return (                    
-        <div>                   
-            <MyNavBar/>  
-            <About/>  
+        <div>                  
+            <MyNavBar/> 
+            <div id = "about"> 
+                <h2> Anirudh Subramanyam </h2>                
+                <About/>  
+            </div>
             <div id = "project">
+                <h2> Projects </h2>
                 <Row className = "projects-row"> 
-                <Project 
+                <Project
                         projectName = "Indiceision"
                         projectImage = "./img/InDiceision.svg"
                         projectDesc = "Android application"
                         projectLink = "https://github.com/heyjasonxu/Indiceision"
                     />         
-                                          
-                    <Project 
+
+                    <Project
                         projectName = "Eatout"
                         projectImage = "./img/eatout.png"
                         projectDesc = "R application"
@@ -49,7 +53,9 @@ class Portfolio extends React.Component {
                 </Row>
                     
             </div>
-            <Experience/>
+            <div id = "experience">                                 
+                <Experience/>                
+            </div>
         </div>
     );
   }  

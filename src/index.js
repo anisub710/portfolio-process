@@ -27,26 +27,27 @@ class Portfolio extends React.Component {
         }
         
     return (                    
-        <div>                  
+        <div>                 
             <MyNavBar/> 
             <div id = "about"> 
                 <h2> Anirudh Subramanyam </h2>                
                 <About/>  
             </div>
             <div id = "project">
-                <h2> Projects </h2>
+                <h2> Projects </h2>                                
                 <Row className = "projects-row"> 
                 <Project
                         projectName = "Indiceision"
                         projectImage = "./img/InDiceision.svg"
                         projectDesc = "Android application"
-                        projectLink = "https://github.com/heyjasonxu/Indiceision"
+                        githubLink = "https://github.com/heyjasonxu/Indiceision"
                     />         
 
                     <Project
                         projectName = "Eatout"
                         projectImage = "./img/eatout.png"
                         projectDesc = "R application"
+                        githubLink = "https://github.com/ask710/eatout"
                         projectLink = "https://ask710.shinyapps.io/eatout/"
                     />
 
@@ -61,7 +62,7 @@ class Portfolio extends React.Component {
   }  
 }
   ReactDOM.render(<Portfolio />, document.querySelector('#root'));
-
+   
           {/* <Card className='small'
         header={<CardTitle image={require('./eatout.png')}>Card Title</CardTitle>}
   actions={[<a href="https://www.google.com">This is a Link</a>]}>

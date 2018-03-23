@@ -8,7 +8,7 @@ export default class About extends React.Component  {
 
     render() {
         return(            
-            <div className = "temp" id = "about">            
+            <div className = "temp">            
                 <p> about temporary text </p>                
             </div>            
         );

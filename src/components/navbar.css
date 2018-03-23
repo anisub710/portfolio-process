@@ -35,3 +35,29 @@
     background-color: #6d9eeb;
     color: white; 
 } 
+
+#up-btn {    
+    background-color: white;
+    position: fixed;
+    right: 23px;
+    bottom: 23px;    
+    margin-bottom: 0;
+    z-index: 998;
+    transform: scale(1);
+    -webkit-transition: transform 1s ease-out;
+    -moz-transition: transform 1s ease-out;
+    -o-transition: transform 1s ease-out;
+    transition: transform 1s ease-out;  
+}
+
+#up-btn:hover {
+    transform: scale(1.05);
+    -webkit-transition: transform 1s ease-out;
+    -moz-transition: transform 1s ease-out;
+    -o-transition: transform 1s ease-out;
+    transition: transform 1s ease-out;  
+}
+
+.blue {
+    background-color: #6d9eeb !important; 
+}

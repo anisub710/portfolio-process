@@ -14,3 +14,20 @@
     color: rgb(0, 98, 255);           
 }
 
+.chip {
+    color: white;
+    background-color: #6d9eeb; 
+    height: 34px;
+    font-size: 15px;
+    line-height: 34px;
+    padding: 0 14px;
+}
+
+.card {
+    box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.14), 3px 3px 3px 3px rgba(0,0,0,0.12), 3px 3px 3px -3px rgba(0,0,0,0.2);           
+}
+
+.card .card-title {
+    font-weight: 500;
+    color: #6c9eec !important;
+}

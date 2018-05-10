@@ -12,8 +12,9 @@ html {
     animation-direction: alternate;
 }
 
-h2 {
-    color: #6d9eeb; 
+#project > h2 {
+    color: white; 
+    text-align: center;
 }
 
 @keyframes loading {
@@ -33,8 +34,13 @@ h2 {
 
 #project {
     padding: 50px;
-    height: 100vh;
+    /* height: 100vh; */
     width: 100%;
+    background-color: #6d9eeb;
+}
+
+#experience {
+    background-color: white;
 }
 
 /* .fade-inn {

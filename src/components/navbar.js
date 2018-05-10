@@ -18,11 +18,9 @@ export default class MyNavBar extends React.Component  {
         var current = window.pageYOffset;
         var threshold = go.offsetTop;
         var timerID;
-        console.log(threshold + " " + current);
         if(threshold - current > 100){
             var t = 1;
-            var timerID = setInterval(function() {
-                console.log ("greater");
+            var timerID = setInterval(function() {                
                 window.scrollBy(0, t);
                 if(window.pageYOffset >= threshold - 50) {
                     clearInterval(timerID);                
@@ -33,8 +31,6 @@ export default class MyNavBar extends React.Component  {
         else if (threshold < current) {  
             var t = 1;      
             var timerID = setInterval(function() {        
-                console.log ("lesser");
-                console.log(threshold + " " + window.pageYOffset);
                 window.scrollBy(0, -t);
                 if(window.pageYOffset <= threshold - 50) {
                     clearInterval(timerID);
@@ -46,7 +42,8 @@ export default class MyNavBar extends React.Component  {
     
     } 
 
-    render() {        
+
+    render() {      
     return (     
         <div>           
             <Navbar fixed = "true" className = "my-nav" brand= {<img className = "menu"/>} right>
@@ -65,5 +62,3 @@ export default class MyNavBar extends React.Component  {
 
 
 }
-
-// function 

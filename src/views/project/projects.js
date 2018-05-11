@@ -35,7 +35,7 @@ export default class Project extends React.Component  {
             }
         }
         return(                             
-            <Col m = {6} l = {6} s={6}>
+            <Col s={5}>
                 <Card header={<CardTitle reveal image= {projectImage} waves='light'/>}
                     title= {projectName}
                     reveal={projectDesc}>

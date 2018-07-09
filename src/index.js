@@ -29,13 +29,19 @@ class Portfolio extends React.Component {
     return (                    
         <div>                 
             <MyNavBar/>             
-            <div id = "about"> 
-                <h2> Anirudh Subramanyam </h2>                                
+            <div id = "about">                                               
                 <About/>  
             </div>            
             <div id = "project">
                 <h2> Projects </h2>                                
                 <Row className = "projects-row"> 
+                    <Project 
+                        projectName = "344 Project"
+                        projectImage = "./img/344 Unfinished.svg"
+                        projectDesc = "Server Side Web Development"
+                        githubLink = ""
+                        infoTags = {[{tag: 'Go'}, {tag: 'Node.js'}]}
+                    />
                     <Project
                         projectName = "Indiceision"
                         projectImage = "./img/InDiceision.svg"

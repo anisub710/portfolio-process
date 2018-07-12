@@ -1,17 +1,38 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import {Navbar, NavItem, Icon} from 'react-materialize';
-import $ from "jquery";
 import '../../index.css';
-import MyNavBar from "../../components/navbar"
+import './experience.css';
+import {Row,Col,Card, CardTitle, Badge, Chip} from 'react-materialize';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 export default class Experience extends React.Component  {
 
     render() {
-        return(            
-            <div className = "temp" id = "experience">            
-                <p> Experience temporary text </p>
-            </div>            
+        var web = require('react-icons/lib/md/web-asset');
+        const {
+            expImage,
+            expTitle,
+            infoTags            
+        } = this.props;
+
+        function TagsList({infoTags}) {
+            return infoTags.map(infoTag => (
+                <Chip>{infoTag.tag}</Chip>
+            ));
+        }
+
+        return(                       
+            <div className = "clearfix">           
+            <ScrollAnimation animateIn = "slideInLeft" animateOnce = {true}>     
+                <img className = "job-image" src = {expImage}/>
+            </ScrollAnimation>
+            <ScrollAnimation animateIn = "fadeIn" animateOnce = {true}>     
+                <h4> {expTitle} </h4>                
+                <TagsList infoTags = {infoTags}/>
+                <br/>
+                This is an example of floating  
+            </ScrollAnimation>
+            </div>               
+
         );
     }
 

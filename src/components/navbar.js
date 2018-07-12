@@ -16,7 +16,7 @@ export default class MyNavBar extends React.Component  {
     timer(place){
         var go = document.getElementById(place);
         var current = window.pageYOffset;
-        var threshold = go.offsetTop;
+        var threshold = go.offsetTop;        
         var timerID;
         if(threshold - current > 100){
             var t = 1;

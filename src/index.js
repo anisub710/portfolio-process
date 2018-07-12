@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {Tab, Tabs,Button, SideNav, SideNavItem, Navbar, NavItem, Row, CardPanel, Col, Card, CardTitle, Icon} from 'react-materialize';
-import $ from "jquery";
 import './index.css';
 import MyNavBar from "./components/navbar";
 import Project from "./views/project/projects";
 import Experience from "./views/experience/experience";
 import About from "./views/about/about";
-import Parallax from 'react-materialize/lib/Parallax';
+import MyFooter from "./components/footer";
+import "animate.css/animate.min.css";
 
 class Portfolio extends React.Component {
     constructor(props) {
@@ -32,9 +32,8 @@ class Portfolio extends React.Component {
             <div id = "about">                                               
                 <About/>  
             </div>            
-            <div id = "project">
-                <h2> Projects </h2>                                
-                <Row className = "projects-row"> 
+            <div id = "project">                                              
+                <Row className = "projects-row">                 
                     <Project 
                         projectName = "344 Project"
                         projectImage = "./img/344 Unfinished.svg"
@@ -48,16 +47,14 @@ class Portfolio extends React.Component {
                         projectDesc = "Android application"                                             
                         githubLink = "https://github.com/heyjasonxu/Indiceision"
                         infoTags = {[{tag: 'Java'}, {tag: 'Android'}]}
-                    />         
-                                               
+                    />           
                     <Project
                         projectName = "Yama"
                         projectImage = "./img/Yama.svg"
                         projectDesc = "Android application"                                             
                         githubLink = "https://github.com/ask710/MessagingApp"
                         infoTags = {[{tag: 'Java'}, {tag: 'Android'}]}
-                    />      
-
+                    />     
                     <Project
                         projectName = "Geopaint"
                         projectImage = "./img/Geopaint.svg"
@@ -65,7 +62,6 @@ class Portfolio extends React.Component {
                         githubLink = "https://github.com/ask710/Geopaint"
                         infoTags = {[{tag: 'Java'}, {tag: 'Android'}]}
                     />
-
                     <Project
                         projectName = "Eatout"
                         projectImage = "./img/eatout.svg"
@@ -75,12 +71,26 @@ class Portfolio extends React.Component {
                         infoTags = {[{tag: 'R'}]}
                     />   
 
+                </Row>                    
+            </div>
+            <hr/>
+            <div id = "experience">                 
+                <Row className = "experience-row">                                 
+                    <Experience
+                        expImage = "./img/iSchool.svg"
+                        expTitle =  "Teaching Assistant"  
+                        infoTags = {[{tag: 'Teaching Assistant'}]}                     
+                    /> 
                 </Row>
-                    
+                <Row className = "experience-row">  
+                    <Experience
+                        expImage = "./img/CloudCherry.svg"
+                        expTitle = "CloudCherry"
+                        infoTags = {[{tag: 'Teaching Assistant'}]}                     
+                    />  
+                </Row>
             </div>
-            <div id = "experience">                                 
-                <Experience/>                
-            </div>
+            <MyFooter/>
         </div>
     );
   }  

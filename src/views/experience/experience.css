@@ -1,5 +1,10 @@
-.temp {
-    width: 100vh;
-    height: 100vh;
-    text-align: center;    
+.job-image {
+    float: left;
+    box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.14), 3px 3px 3px 3px rgba(0,0,0,0.12), 3px 3px 3px -3px rgba(0,0,0,0.2);           
+    width: 50%;
+    margin-right: 20px;
+
+}
+.clearfix {
+    overflow: auto;
 }

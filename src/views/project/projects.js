@@ -35,9 +35,9 @@ export default class Project extends React.Component  {
                 return <a className = "icon" href = {props.projectLink}> {React.createElement(web, null)}> </a>
             }
         }
-        return(      
-            <ScrollAnimation animateIn = "fadeInUpBig" animateOnce = {true}>                                                                   
+        return(                                                                         
                 <Col m={6} xl={4}>
+                <ScrollAnimation animateIn = "fadeInUpBig" animateOnce = {true}> 
                     <Card header={<CardTitle reveal image= {projectImage} waves='light'/>}
                         title= {projectName}
                         reveal={projectDesc}>
@@ -48,8 +48,8 @@ export default class Project extends React.Component  {
                         }                    
                         </p>                               
                     </Card>          
-                </Col>   
-            </ScrollAnimation>
+                </ScrollAnimation>
+                </Col>               
         );
     }
 

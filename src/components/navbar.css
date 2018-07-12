@@ -36,6 +36,11 @@
     color: white; 
 } 
 
+.scroll-active {   
+    background-color: #6d9eeb;
+    color: white !important;  
+}
+
 #up-btn {    
     background-color: white;
     position: fixed;

@@ -21,11 +21,11 @@ class Portfolio extends React.Component {
       }
       
       render() {
-        const { loading } = this.state;
-        
-        if(loading) { 
-          return null; 
-        }        
+            const { loading } = this.state;
+            
+            if(loading) { 
+            return null; 
+            }        
     return (                    
         <div>                 
             <MyNavBar/>             

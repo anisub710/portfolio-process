@@ -30,7 +30,10 @@ class Portfolio extends React.Component {
         <div>                 
             <MyNavBar/>             
             <div id = "about">                                               
-                <About/>  
+                <About
+                    aboutImage = "./img/profile_temp.svg"
+                    aboutDesc = "Captivating introduction about me"                    
+                />  
             </div>            
             <div id = "project">                                              
                 <Row className = "projects-row">                 
@@ -39,7 +42,7 @@ class Portfolio extends React.Component {
                         projectImage = "./img/344 Unfinished.svg"
                         projectDesc = "Server Side Web Development"
                         githubLink = ""
-                        infoTags = {[{tag: 'Go'}, {tag: 'Node.js'}]}
+                        infoTags = {[{tag: 'Go'}, {tag: 'Node.js'}, {tag: 'Javascript'}]}
                     />
                     <Project
                         projectName = "Indiceision"
@@ -78,15 +81,25 @@ class Portfolio extends React.Component {
                 <Row className = "experience-row">                                 
                     <Experience
                         expImage = "./img/iSchool.svg"
-                        expTitle =  "Teaching Assistant"  
-                        infoTags = {[{tag: 'Teaching Assistant'}]}                     
+                        expTitle =  "University of Washington Information School"  
+                        infoTags = {[{tag: 'Teaching Assistant'}]} 
+                        expDesc = "Captivating description of this experience"                    
                     /> 
+                </Row>
+                <Row className = "experience-row">                                 
+                    <Experience
+                        expImage = "./img/Indegene.svg"
+                        expTitle =  "Indegene"  
+                        infoTags = {[{tag: 'Internship'}]} 
+                        expDesc = "Captivating description of this experience"                    
+                    />   
                 </Row>
                 <Row className = "experience-row">  
                     <Experience
                         expImage = "./img/CloudCherry.svg"
                         expTitle = "CloudCherry"
-                        infoTags = {[{tag: 'Teaching Assistant'}]}                     
+                        infoTags = {[{tag: 'Internship'}]} 
+                        expDesc = "Captivating description of this experience"                                        
                     />  
                 </Row>
             </div>
@@ -97,11 +110,7 @@ class Portfolio extends React.Component {
 }
   ReactDOM.render(<Portfolio />, document.querySelector('#root'));
    
-          {/* <Card className='small'
-        header={<CardTitle image={require('./eatout.png')}>Card Title</CardTitle>}
-  actions={[<a href="https://www.google.com">This is a Link</a>]}>
-  I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.
-    </Card>     */}
+
 
 
 

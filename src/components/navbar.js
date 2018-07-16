@@ -38,6 +38,7 @@ export default class MyNavBar extends React.Component  {
 
 
     render() {  
+        //try to clean up
         document.onscroll = () => {
             let project = document.getElementById("project");
             let projectTab = document.getElementById("project-tab");

@@ -7,14 +7,18 @@ import ScrollAnimation from 'react-animate-on-scroll';
 export default class About extends React.Component  {
 
     render() {
+        const {
+            aboutImage,
+            aboutDesc
+        } = this.props;
         return( 
             <ScrollAnimation animateIn = "fadeIn" animateOnce = "true">
                 <div id = "container">
                     <div id = "top">
-                        <div id= "image-holder"></div>
+                        <img id= "image-holder" src = {aboutImage}/>
                     </div>   
                     <div id = "bottom">
-                        <p> about temporary text </p>                
+                        <p className = "aboutDesc"> {aboutDesc} </p>                
                     </div>
                 </div>   
             </ScrollAnimation>

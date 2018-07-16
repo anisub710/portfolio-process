@@ -11,7 +11,8 @@ export default class Experience extends React.Component  {
         const {
             expImage,
             expTitle,
-            infoTags            
+            infoTags,
+            expDesc            
         } = this.props;
 
         function TagsList({infoTags}) {
@@ -22,15 +23,15 @@ export default class Experience extends React.Component  {
 
         return(                       
             <div className = "clearfix">           
-            <ScrollAnimation animateIn = "slideInLeft" animateOnce = {true}>     
-                <img className = "job-image" src = {expImage}/>
-            </ScrollAnimation>
-            <ScrollAnimation animateIn = "fadeIn" animateOnce = {true}>     
-                <h4> {expTitle} </h4>                
-                <TagsList infoTags = {infoTags}/>
-                <br/>
-                This is an example of floating  
-            </ScrollAnimation>
+                <ScrollAnimation animateIn = "slideInLeft" animateOnce = {true}>     
+                    <img className = "job-image" src = {expImage}/>
+                </ScrollAnimation>
+                <ScrollAnimation animateIn = "fadeIn" animateOnce = {true}>     
+                    <h4 className = "expTitle"> {expTitle} </h4>                
+                    <TagsList infoTags = {infoTags}/>
+                    <br/>
+                    {expDesc}
+                </ScrollAnimation>
             </div>               
 
         );

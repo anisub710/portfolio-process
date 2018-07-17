@@ -40,7 +40,12 @@ class Portfolio extends React.Component {
                     <Project 
                         projectName = "344 Project"
                         projectImage = "./img/344 Unfinished.svg"
-                        projectDesc = "Server Side Web Development"
+                        projectDesc = {<p>Built a server from scratch with the following features:<br/>
+                            <ul>
+                                <li>Feature 1</li>
+                                <li>Feature 2</li>
+                            </ul>
+                        </p>}
                         githubLink = ""
                         infoTags = {[{tag: 'Go'}, {tag: 'Node.js'}, {tag: 'Javascript'}]}
                     />
